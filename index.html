@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Γεύσεις Ναυπάκτου · Παραδοσιακά Προϊόντα</title>
+  <meta name="description" content="Παραδοσιακά προϊόντα από την καρδιά της Αιτωλοακαρνανίας. Μέλι, ελαιόλαδο, τσίπουρο, ροζέ κρασί, βότανα και λουκούμια.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="images/logo.png" alt="Γεύσεις Ναυπάκτου" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <span class="brand-name" data-biz-name>Γεύσεις Ναυπάκτου</span>
+          <span class="brand-tagline" data-biz-tagline>Παραδοσιακά Προϊόντα</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active" data-i18n="nav_home">Αρχική</a></li>
+          <li><a href="products.html" data-i18n="nav_products">Προϊόντα</a></li>
+          <li><a href="about.html" data-i18n="nav_about">Σχετικά</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button data-lang-btn="el" type="button">ΕΛ</button>
+          <button data-lang-btn="en" type="button">EN</button>
+        </div>
+        <button class="cart-btn" data-cart-open aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path></svg>
+          <span class="cart-count hidden" data-cart-count>0</span>
+        </button>
+        <button class="menu-toggle" data-menu-toggle aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-ornament">⚜ ⚜ ⚜</div>
+      <h1 data-biz-name>Γεύσεις Ναυπάκτου</h1>
+      <p class="hero-tagline" data-biz-tagline>Παραδοσιακά προϊόντα από την καρδιά της Αιτωλοακαρνανίας</p>
+      <div class="hero-actions">
+        <a href="products.html" class="btn btn-accent" data-i18n="hero_cta">Δες τα προϊόντα</a>
+        <a href="about.html" class="btn btn-outline" style="color:white;border-color:white;" data-i18n="hero_cta_about">Η ιστορία μας</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FEATURED PRODUCTS ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="featured_title">Επιλεγμένα Προϊόντα</h2>
+        <p data-i18n="featured_sub">Παραδοσιακές γεύσεις και αρώματα της Ναυπακτίας, με μεράκι.</p>
+      </div>
+      <div class="product-grid" data-featured-grid></div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="products.html" class="btn btn-primary" data-i18n="all_products">Όλα τα προϊόντα</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FEATURES ============== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="features_title">Γιατί Γεύσεις Ναυπάκτου;</h2>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L4 7v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V7l-8-5z"/></svg>
+          </div>
+          <h3 data-i18n="feature_local_title">100% Τοπικά</h3>
+          <p data-i18n="feature_local_text">Από μικρούς παραγωγούς της Ναυπακτίας και της Αιτωλοακαρνανίας.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7L12 3 4 7v10l8 4 8-4V7z"/><path d="M4 7l8 4 8-4"/><path d="M12 11v10"/></svg>
+          </div>
+          <h3 data-i18n="feature_traditional_title">Παραδοσιακές Συνταγές</h3>
+          <p data-i18n="feature_traditional_text">Συνταγές με γενιές ιστορίας, χωρίς συντηρητικά.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3 data-i18n="feature_shipping_title">Δωρεάν Αποστολή >40€</h3>
+          <p data-i18n="feature_shipping_text">Σε όλη την Ελλάδα, σε 2-4 εργάσιμες ημέρες.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </div>
+          <h3 data-i18n="feature_quality_title">Πιστοποιημένη Ποιότητα</h3>
+          <p data-i18n="feature_quality_text">ΠΟΠ, ΠΓΕ και BIO πιστοποιήσεις σε πολλά προϊόντα.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ABOUT TEASER ============== -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+           <img src="images/about.jpg">
+        </div>
+        <div>
+          <h2 data-i18n="about_title">Η Ιστορία μας</h2>
+          <p data-i18n="about_p1">Στις «Γεύσεις Ναυπάκτου» επιλέγουμε με προσοχή προϊόντα από μικρούς παραγωγούς της Ναυπακτίας, της Φωκίδας και της ευρύτερης Αιτωλοακαρνανίας.</p>
+          <blockquote data-i18n="about_q">«Η Ναύπακτος δεν είναι μόνο το κάστρο και η θάλασσα.»</blockquote>
+          <a href="about.html" class="btn btn-primary" data-i18n="hero_cta_about">Η ιστορία μας</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 data-biz-name>Γεύσεις Ναυπάκτου</h4>
+          <p class="footer-brand-text" data-biz-tagline>Παραδοσιακά προϊόντα από την καρδιά της Αιτωλοακαρνανίας</p>
+          <div class="social-links">
+            <a href="https://facebook.com/gefseisnafpaktou" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+            <a href="https://instagram.com/gefseisnafpaktou" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="nav_products">Προϊόντα</h4>
+          <ul>
+            <li><a href="products.html?cat=honey">Μέλι</a></li>
+            <li><a href="products.html?cat=herbs">Βότανα</a></li>
+            <li><a href="products.html?cat=spirits">Ποτά</a></li>
+            <li><a href="products.html?cat=sugary">Γλυκά</a></li>
+            <li><a href="products.html?cat=gifts">Δώρα</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="contact_info">Πληροφορίες</h4>
+          <ul>
+            <li><a href="about.html" data-i18n="nav_about">Σχετικά</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Επικοινωνία</a></li>
+            <li><a href="contact.html#faq" data-i18n="faq_title">Συχνές Ερωτήσεις</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="contact_title">Επικοινωνία</h4>
+          <ul>
+            <li><span data-biz-address>Παραλιακή Ναυπάκτου</span></li>
+            <li><a href="mailto:info@nafpaktos.gr">info@nafpaktos.gr</a></li>
+            <li><span data-biz-hours>Δευ-Σαβ 09:00-21:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 <span data-biz-name>Γεύσεις Ναυπάκτου</span>. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============== CART DRAWER ============== -->
+  <div class="cart-drawer-overlay" data-cart-overlay data-cart-close></div>
+  <aside class="cart-drawer" data-cart-drawer aria-label="Cart">
+    <div class="cart-drawer-header">
+      <h3 data-i18n="cart_title">Καλάθι</h3>
+      <button class="cart-close" data-cart-close aria-label="Close">×</button>
+    </div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-drawer-footer" data-cart-footer>
+      <div class="cart-summary">
+        <div class="cart-summary-row"><span data-i18n="cart_subtotal">Υποσύνολο</span><span data-cart-subtotal>0,00€</span></div>
+        <div class="cart-summary-row"><span data-i18n="cart_shipping">Μεταφορικά</span><span data-cart-shipping>—</span></div>
+        <div class="cart-summary-row total"><span data-i18n="cart_total">Σύνολο</span><span data-cart-total>0,00€</span></div>
+      </div>
+      <a href="cart.html" class="btn btn-primary btn-block" data-i18n="cart_checkout">Ολοκλήρωση παραγγελίας</a>
+      <button class="btn btn-outline btn-block btn-sm" style="margin-top:0.5rem;" data-cart-clear data-i18n="cart_clear">Άδειασμα</button>
+    </div>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
