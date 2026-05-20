@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5ecd9"/>
+      <stop offset="100%" stop-color="#ebe0c5"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#bg)" stroke="#2d4a2b" stroke-width="3"/>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#c9a063" stroke-width="1.5"/>
+  <text x="100" y="80" font-family="Playfair Display, Georgia, serif" font-size="28" font-weight="700" fill="#2d4a2b" text-anchor="middle">Γεύσεις</text>
+  <text x="100" y="115" font-family="Playfair Display, Georgia, serif" font-size="28" font-weight="700" fill="#2d4a2b" text-anchor="middle">Ναυπάκτου</text>
+  <line x1="50" y1="135" x2="150" y2="135" stroke="#c9a063" stroke-width="1"/>
+  <text x="100" y="155" font-family="Inter, sans-serif" font-size="9" fill="#8b3a1f" text-anchor="middle" letter-spacing="2">ΠΑΡΑΔΟΣΙΑΚΑ ΠΡΟΪΟΝΤΑ</text>
+  <text x="100" y="170" font-family="Inter, sans-serif" font-size="14" fill="#c9a063" text-anchor="middle">🌿 ⚓ 🍇</text>
+</svg>
