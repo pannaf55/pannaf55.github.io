@@ -1,3 +1,3 @@
 theme: jekyll-theme-minimal
-title:  gefseisnavpaktou.gr
+title: pannaf55.github.io/gefseisnavpaktou.gr
 description: Traditional products from the heart of Aitoloakarnanias
